@@ -1,0 +1,3 @@
+# The Submodule Problem
+
+Let's say you want to build an app from reusable components.  That's smart.  Until you try and piece it all together.  The git repos...
