@@ -8,17 +8,22 @@
 require("../../whatever");  // no good
 require("whatever"); // mmm, better
 ```
+How?  Here's the gist:
 
-### How?  Just create another `node_modules` within a sub folder
+### Just create another `node_modules` within a sub folder
 
 - Root `/node_modules/` works as usual.  `npm install` your external packages here.
 - `/code/node_modules/` is reserved for "local" packages.
 - Any file within `/code/` can `require()` any of these "local" packages, without a relative path.
-- Check the `.gitignore` to see how to ignore the root `/node_modules/`, but check in the `/code/node_modules/`
+- Check the `.gitignore` to see how to ignore the root `/node_modules/` and not ignore the `/code/node_modules/`
 
-### Other solutions
+### Give me some love
 
-Lerna is one.  I saw something about using path/environment variables, but not sure how that works.
+I like simple solutions.  I arrived at this structure after trying git submodules and messing around for days with `npm link`.  It's amazingly simple, yet effective.  
+
+### Other solutions to the submodule problem
+
+[Lerna](https://github.com/lerna/lerna) is one.  Also, I saw something about using path/environment variables, but not sure how that works.  Please use the issues if you're aware of other solutions to this problem.
 
 
 ### About the name, Meepo
