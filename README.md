@@ -4,6 +4,8 @@
 
 # The simplest way to version control your sub modules
 
+You have many modules, and may or may not have an organizational strategy for them.  Here's a very simple approach that offers some nice side effects:
+
 ```
 require("../../whatever");  // no good
 require("whatever"); // mmm, better
@@ -23,7 +25,9 @@ I like simple solutions.  I arrived at this structure after trying git submodule
 
 ### Other solutions to the submodule problem
 
-[Lerna](https://github.com/lerna/lerna) is one.  Also, I saw something about using path/environment variables, but not sure how that works.  Please use the issues if you're aware of other solutions to this problem.
+[Lerna](https://github.com/lerna/lerna) is one.  Lerna has a bunch of options to `npm publish`, and manage the version numbers.  I'm not quite there yet.
+
+Also, I saw something about using path/environment variables, but not sure how that works.  Please use the issues if you're aware of other solutions to this problem.
 
 
 ### About the name, Meepo
