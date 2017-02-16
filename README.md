@@ -9,7 +9,7 @@ require("../../whatever");  // no good
 require("whatever"); // mmm, better
 ```
 
-### The Gist:  Multiple `node_modules`
+### How?  Just create another `node_modules` within a sub folder
 
 - Root `/node_modules/` works as usual.  `npm install` your external packages here.
 - `/code/node_modules/` is reserved for "local" packages.
