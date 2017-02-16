@@ -1,0 +1,10 @@
+{
+  "name": "meepo",
+  "description": "A simple pattern for managing multiple packages",
+  "keywords": [
+    "lerna",
+    "monorepo"
+  ],
+  "author": "Michael Lewis <mike@lew42.com>",
+  "license": "MIT"
+}
