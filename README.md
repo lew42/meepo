@@ -4,7 +4,7 @@
 
 # Stop using relative requires
 
-```
+```javascript
 require("../../whatever");  // no good
 require("whatever"); // mmm, better
 ```
